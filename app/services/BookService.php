@@ -169,7 +169,10 @@ class BookService extends Requests
               $result['message'] = "Book updated";
             } else {
               http_response_code(406);
-              $result['error'] = "Sorry, something went wrog, verify the IDs or fields";
+              $result = [
+                'error_01' => "Verify title or year, try different values",
+                'error_02' => "Sorry, something went wrog, verify the IDs"
+              ];
             }
 
           } else {
