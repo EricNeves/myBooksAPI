@@ -6,13 +6,13 @@
 </h1>
 
 <h4 align="center">
-  API RESTFul desenvolvida com PHP, Mysql, autenticação por JWT, CRUD de dados, rotas 
+  API RESTFul desenvolvida com PHP, Mysql, autenticação por JWT, CRUD de dados, rotas e entre outros.
 </h4>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/ericneves/simpleCRUDMVC?style=flat-square&logo=github&logoColor=white&color=green">
-  <img src="https://img.shields.io/github/languages/top/ericneves/simpleCRUDMVC?style=flat-square&logo=php&logoColor=blue&labelColor=white">
-  <img src="https://img.shields.io/github/license/ericneves/simpleCRUDMVC?style=flat-square&logo=github&color=red">
+  <img src="https://img.shields.io/github/last-commit/ericneves/myBooksAPI?style=flat-square&logo=github&logoColor=yellow&color=yellow">
+  <img src="https://img.shields.io/github/languages/top/ericneves/myBooksAPI?style=flat-square&logo=php&logoColor=blue&labelColor=white">
+  <img src="https://img.shields.io/github/license/ericneves/myBooksAPI?style=flat-square&logo=github&logoColor=white&color=red">
 </p>
 
 <p align="center">
@@ -41,7 +41,7 @@ In Progress
 
 ### License 📃
 
-<img src="https://img.shields.io/github/license/ericneves/simpleCRUDMVC?style=flat-square&logo=github&color=red" alt="License">
+<img src="https://img.shields.io/github/license/ericneves/myBooksAPI?style=flat-square&logo=github&logoColor=white&color=red" alt="License">
 
 ---
 
