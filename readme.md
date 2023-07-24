@@ -6,7 +6,7 @@
 </h1>
 
 <h4 align="center">
-  API RESTFul desenvolvida com PHP, Mysql, autenticação por JWT, CRUD de dados, rotas e entre outros.
+  API RESTFul desenvolvida com <b>PHP</b>, <b>Mysql</b>, autenticação por <b>JWT</b>, <b>CRUD</b> de dados, rotas e entre outros.
 </h4>
 
 <p align="center">
@@ -27,17 +27,17 @@ URI: [In Progress]()
 
 ### Features
 
-API desenvolvida com PHP, Mysql, Rotas, URL amigável, autenticação por JWT, OOP e muito mais.
+API desenvolvida com <b>PHP</b>, <b>Mysql</b>, <b>Rotas</b>, <b>URL amigável</b>, autenticação por <b>JWT</b>, <b>OOP</b> e muito mais.
 
 * PHP
-  - JWT
-  - PDO (Mysql)
-  - OOP 
-  - Routes
-  - SPL - Autoload
+  - <b>JWT</b>
+  - <b>PDO (Mysql)</b>
+  - <b>OOP </b>
+  - <b>Routes</b>
+  - <b>SPL - Autoload</b>
 * MYSQL
-  - DDL
-  - DML
+  - <b>DDL</b>
+  - <b>DML</b>
 
 ### How to use
 
@@ -55,7 +55,7 @@ Segue-se alguns passos para a execução da aplicação:
 
 ### How to consume API
 
-Nos exemplos de consumo da API, será utilizado a funcionalidade Fetch API do Javascript.
+Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
 ```js
 // 
