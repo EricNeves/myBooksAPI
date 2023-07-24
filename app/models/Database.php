@@ -15,6 +15,7 @@ class Database
       return $pdo;
     } catch(PDOException $err) {
       echo json_encode(["error" => "Sorry, something went wrong | Database"]);
+      exit();
     }
   }
 }
