@@ -263,7 +263,7 @@ $ Update book - @Route[PUT] "/books/update/{book_id}"
 // @Route[PUT] "/books/update/{book_id}" => Update book 
 
 const config = {
-  method: 'GET',
+  method: 'PUT',
   body: JSON.stringify({ title, year }),
   headers: {
     Authorization: 'Bearer ${your-jwt-token}'
@@ -274,24 +274,29 @@ fetch('http://127.0.0.1/myBooksAPI/update/{book_id}')
   .then(res => res.json())
   .then(console.log)
 
-/* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
-} */
+/* {message: 'Book updated'} */
 
 ```
 
-```js
-// @Route[GET] "/" => Home
+```sh
+$ Remove book - @Route[DELETE] "/books/remove/{book_id}"
+```
 
-fetch('http://127.0.0.1/myBooksAPI/')
+```js
+//  @Route[DELETE] "/books/remove/{book_id}" => Remove book
+
+const config = {
+  method: 'DELETE',
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
+
+fetch('http://127.0.0.1/myBooksAPI/books/remove/{book_id}')
   .then(res => res.json())
   .then(console.log)
 
-/* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
-} */
+/* {message: 'Book deleted'} */
 
 ```
 
