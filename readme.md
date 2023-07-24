@@ -20,9 +20,13 @@
   <a href="#how-to-use">How to User ?</a>
 </p>
 
+<div align="center">
+
 ![Screenshot1](.github/screenshot1.png)
+
 ![Screenshot2](.github/screenshot2.png)
 
+</div>
 URI: [In Progress]()
 
 ### Features
