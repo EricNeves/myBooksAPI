@@ -24,9 +24,10 @@
 
 ![Screenshot1](.github/screenshot1.png)
 
-![Screenshot2](.github/screenshot2.png)
+![Screenshot2](.github/screenshotB.png)
 
 </div>
+
 URI: [In Progress]()
 
 ### Features
@@ -62,7 +63,7 @@ Segue-se alguns passos para a execução da aplicação:
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
 ```js
-// 
+// @Route [/, ]
 
 
 ```
