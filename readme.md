@@ -63,11 +63,147 @@ Segue-se alguns passos para a execução da aplicação:
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
 ```js
-// @Route "/" => Home
+// @Route[GET] "/" => API home 
 
 fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[POST] "/users/create" => Create a new user
+
+const config = {
+  method: 'POST',
+  body: JSON.stringify({ name, email, password })
+}
+
+fetch('http://127.0.0.1/myBooksAPI/users/create', config)
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+}
+
+```
+
+```js
+// @Route[GET] "/users/login" => Login user
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
+
+```
+
+```js
+// @Route[GET] "/" => Home
+
+fetch('http://127.0.0.1/myBooksAPI/')
+  .then(res => res.json())
+  .then(console.log)
+
+return = {
+  "message": "Hey There! 🦍",
+  "guide": "https://github.com/EricNeves/myBooksAPI"
+}
 
 ```
 
