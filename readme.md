@@ -69,10 +69,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
+/* {
   "message": "Hey There! 🦍",
   "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+} */
 
 ```
 
@@ -88,10 +88,10 @@ fetch('http://127.0.0.1/myBooksAPI/users/create', config)
   .then(res => res.json())
   .then(console.log)
 
-return = {
+/* {
   login: "http://127.0.0.1/github/myBooksAPI/users/login",
   message: "Created"
-}
+} */
 
 ```
 
@@ -102,10 +102,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -116,10 +116,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -130,10 +130,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -144,10 +144,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -158,10 +158,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -172,10 +172,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -186,10 +186,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
@@ -200,10 +200,10 @@ fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
-return = {
-  "message": "Hey There! 🦍",
-  "guide": "https://github.com/EricNeves/myBooksAPI"
-}
+/* {
+  login: "http://127.0.0.1/github/myBooksAPI/users/login",
+  message: "Created"
+} */
 
 ```
 
