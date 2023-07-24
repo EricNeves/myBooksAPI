@@ -10,7 +10,7 @@ class HomeService extends Requests
       http_response_code(200);
       $result = [
         "message" => "Hey There! 🦍",
-        "guide" => "https://github.com/ericneves"
+        "guide" => "https://github.com/EricNeves/myBooksAPI"
       ];
     } else {
       http_response_code(405);
