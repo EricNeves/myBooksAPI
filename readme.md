@@ -62,6 +62,8 @@ Segue-se alguns passos para a execução da aplicação:
 
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
+* API home - @Route[GET] "/"
+
 ```js
 // @Route[GET] "/" => API home 
 
@@ -75,6 +77,8 @@ fetch('http://127.0.0.1/myBooksAPI/')
 } */
 
 ```
+
+* Create a new user - @Route[POST] "/users/create"
 
 ```js
 // @Route[POST] "/users/create" => Create a new user
@@ -95,24 +99,38 @@ fetch('http://127.0.0.1/myBooksAPI/users/create', config)
 
 ```
 
-```js
-// @Route[GET] "/users/login" => Login user
+* User login - @Route[POST] "/users/login"
 
-fetch('http://127.0.0.1/myBooksAPI/')
+```js
+// @Route[POST] "/users/login" => Login user
+
+const config = {
+  method: 'POST',
+  body: JSON.stringify({ email, password })
+}
+
+fetch('http://127.0.0.1/myBooksAPI/users/login')
   .then(res => res.json())
   .then(console.log)
 
 /* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
+  message: "successfully",
+  token: your-jwt-token
 } */
 
 ```
 
-```js
-// @Route[GET] "/" => Home
+* List user info - @Route[GET] "/users"
 
-fetch('http://127.0.0.1/myBooksAPI/')
+```js
+// @Route[PUT] "/users/update" => Update user
+
+const config = {
+  method: 'POST',
+  body: JSON.stringify({ name, password })
+}
+
+fetch('http://127.0.0.1/myBooksAPI/users/update')
   .then(res => res.json())
   .then(console.log)
 
