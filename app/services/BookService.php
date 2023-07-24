@@ -223,7 +223,7 @@ class BookService extends Requests
             $result['message'] = "Book deleted";
           } else {
             http_response_code(406);
-            $result['error'] = "Sorry, something went wrog, verify the IDs or fields";
+            $result['error'] = "Sorry, something went wrog, book not exists";
           }
 
         } else {
