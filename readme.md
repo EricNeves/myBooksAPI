@@ -63,8 +63,11 @@ Segue-se alguns passos para a execução da aplicação:
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
 ```js
-// @Route [/, ]
+// @Route "/" => Home
 
+fetch('/')
+  .then(res => res.json())
+  .then(console.log)
 
 ```
 
