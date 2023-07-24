@@ -65,7 +65,7 @@ Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch
 ```js
 // @Route "/" => Home
 
-fetch('http://URL/myBooksAPI/')
+fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
   .then(console.log)
 
