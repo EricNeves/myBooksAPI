@@ -33,6 +33,7 @@ URI: [In Progress]()
 ### Features
 
 API desenvolvida com <b>PHP</b>, <b>Mysql</b>, <b>Rotas</b>, <b>URL amigável</b>, autenticação por <b>JWT</b>, <b>OOP</b> e muito mais.
+O projeto consiste da criação de usuários, podendo cada usuário, cadastrar, editar ou deletar seus livros.
 
 * PHP
   - <b>JWT</b>
@@ -131,7 +132,7 @@ $ List user info - @Route[GET] "/users"
 ```
 
 ```js
-// @Route[GET] "/users/update" => List user info
+// @Route[GET] "/users" => List user info
 
 const config = {
   method: 'GET',
@@ -159,65 +160,117 @@ $ Update user - @Route[PUT] "/users/update"
 ```
 
 ```js
-// @Route[PUT] "/users/update"
+// @Route[PUT] "/users/update" => Update user
 
-fetch('http://127.0.0.1/myBooksAPI/')
+const config = {
+  method: 'PUT',
+  body: JSON.stringify({ name, password })
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
+
+fetch('http://127.0.0.1/myBooksAPI/users/update', config)
+  .then(res => res.json())
+  .then(console.log)
+
+/* {message: 'User updated'} */
+
+```
+
+```sh
+$ List user books - @Route[GET] "/books"
+```
+
+```js
+// @Route[GET] "/books" => List books
+
+const config = {
+  method: 'GET',
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
+
+fetch('http://127.0.0.1/myBooksAPI/books')
   .then(res => res.json())
   .then(console.log)
 
 /* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
+  "quantity": 0,
+	"books": []
 } */
 
 ```
 
-```js
-// @Route[GET] "/" => Home
+```sh
+$ Create a book - @Route[POST] "/books/create"
+```
 
-fetch('http://127.0.0.1/myBooksAPI/')
+```js
+// @Route[POST] "/books/create" => Create a book
+
+const config = {
+  method: 'POST',
+  body: JSON.stringofy({ title, year }),
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
+
+fetch('http://127.0.0.1/myBooksAPI/books/create')
+  .then(res => res.json())
+  .then(console.log)
+
+/* { "message": "Book created" } */
+
+```
+
+```sh
+$ List book by ID - @Route[GET] "/books/list/{id}"
+```
+
+```js
+// @Route[GET] "/books/list/{book_id}" => List book by ID
+
+const config = {
+  method: 'GET',
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
+
+fetch('http://127.0.0.1/myBooksAPI/books/list/{book_id}')
   .then(res => res.json())
   .then(console.log)
 
 /* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
+  book: {
+    "id": book_id,
+    "title": book_title,
+    "year_created": book_year,
+    "user_id": user_id,
+  }
 } */
 
 ```
 
-```js
-// @Route[GET] "/" => Home
-
-fetch('http://127.0.0.1/myBooksAPI/')
-  .then(res => res.json())
-  .then(console.log)
-
-/* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
-} */
-
+```sh
+$ Update book - @Route[PUT] "/books/update/{book_id}"
 ```
 
 ```js
-// @Route[GET] "/" => Home
+// @Route[PUT] "/books/update/{book_id}" => Update book 
 
-fetch('http://127.0.0.1/myBooksAPI/')
-  .then(res => res.json())
-  .then(console.log)
+const config = {
+  method: 'GET',
+  body: JSON.stringify({ title, year }),
+  headers: {
+    Authorization: 'Bearer ${your-jwt-token}'
+  }
+}
 
-/* {
-  login: "http://127.0.0.1/github/myBooksAPI/users/login",
-  message: "Created"
-} */
-
-```
-
-```js
-// @Route[GET] "/" => Home
-
-fetch('http://127.0.0.1/myBooksAPI/')
+fetch('http://127.0.0.1/myBooksAPI/update/{book_id}')
   .then(res => res.json())
   .then(console.log)
 
