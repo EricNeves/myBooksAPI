@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src=".github/icon.png">
   <br>
-    Books API
+    My Books API
   <br>
 </h1>
 
