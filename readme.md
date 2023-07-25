@@ -28,8 +28,6 @@
 
 </div>
 
-URI: [In Progress]()
-
 ### Features
 
 API desenvolvida com <b>PHP</b>, <b>Mysql</b>, <b>Rotas</b>, <b>URL amigável</b>, autenticação por <b>JWT</b>, <b>OOP</b> e muito mais.
@@ -51,7 +49,7 @@ Segue-se alguns passos para a execução da aplicação:
 
 - Iniciar o servidor <b>Apache</b> e o <b>Mysql</b>.
 
-- Configure o arquivo config.php com suas credenciais de banco de dados e edite o BASE_URL conforme a necessidade.
+- Configure o arquivo config.php com suas credenciais de banco de dados e edite o BASE_URL conforme a localização do projeto.
 
 - Copie a pasta do projeto para dentro do servidor <b>Apache</b>.
 
