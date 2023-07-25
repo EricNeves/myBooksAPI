@@ -18,6 +18,7 @@
 <p align="center">
   <a href="#features">Features</a> •
   <a href="#how-to-use">How to User ?</a>
+  <a href="#how-to-consume-api">How to Consume API ?</a>
 </p>
 
 <div align="center">
@@ -62,7 +63,7 @@ Segue-se alguns passos para a execução da aplicação:
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
 ```sh
-$ API home - @Route[GET] "/"
+# API home - @Route[GET] "/" 
 ```
 
 ```js
@@ -80,7 +81,7 @@ fetch('http://127.0.0.1/myBooksAPI/')
 ```
 
 ```sh
-$ Create a new user - @Route[POST] "/users/create"
+# Create a new user - @Route[POST] "/users/create"
 ```
 
 ```js
@@ -103,7 +104,7 @@ fetch('http://127.0.0.1/myBooksAPI/users/create', config)
 ```
 
 ```sh
-$ Login user - @Route[POST] "/users/login"
+# Login user - @Route[POST] "/users/login"
 ```
 
 ```js
@@ -126,7 +127,7 @@ fetch('http://127.0.0.1/myBooksAPI/users/login')
 ```
 
 ```sh
-$ List user info - @Route[GET] "/users"
+# List user info - @Route[GET] "/users"
 ```
 
 ```js
@@ -154,7 +155,7 @@ fetch('http://127.0.0.1/myBooksAPI/users', config)
 ```
 
 ```sh
-$ Update user - @Route[PUT] "/users/update"
+# Update user - @Route[PUT] "/users/update"
 ```
 
 ```js
@@ -177,7 +178,7 @@ fetch('http://127.0.0.1/myBooksAPI/users/update', config)
 ```
 
 ```sh
-$ List user books - @Route[GET] "/books"
+# List user books - @Route[GET] "/books"
 ```
 
 ```js
@@ -202,7 +203,7 @@ fetch('http://127.0.0.1/myBooksAPI/books')
 ```
 
 ```sh
-$ Create a book - @Route[POST] "/books/create"
+# Create a book - @Route[POST] "/books/create"
 ```
 
 ```js
@@ -225,7 +226,7 @@ fetch('http://127.0.0.1/myBooksAPI/books/create')
 ```
 
 ```sh
-$ List book by ID - @Route[GET] "/books/list/{id}"
+# List book by ID - @Route[GET] "/books/list/{id}"
 ```
 
 ```js
@@ -254,7 +255,7 @@ fetch('http://127.0.0.1/myBooksAPI/books/list/{book_id}')
 ```
 
 ```sh
-$ Update book - @Route[PUT] "/books/update/{book_id}"
+# Update book - @Route[PUT] "/books/update/{book_id}"
 ```
 
 ```js
@@ -277,7 +278,7 @@ fetch('http://127.0.0.1/myBooksAPI/update/{book_id}')
 ```
 
 ```sh
-$ Remove book - @Route[DELETE] "/books/remove/{book_id}"
+# Remove book - @Route[DELETE] "/books/remove/{book_id}"
 ```
 
 ```js
