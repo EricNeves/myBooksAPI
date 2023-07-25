@@ -31,7 +31,7 @@
 ### Features
 
 <b>API</b> desenvolvida com <b>PHP</b>, <b>Mysql</b>, <b>Rotas</b>, <b>URL amigável</b>, <b>autenticação</b> por <b>JWT</b>, <b>OOP</b> e muito mais.
-O projeto consiste da criação de usuários, podendo cada usuário, cadastrar, editar ou deletar seus livros.
+O projeto consiste da criação de usuários, podendo cada usuário, <b>cadastrar</b>, <b>editar</b> ou <b>deletar</b> seus livros.
 
 * PHP
   - <b>JWT</b>
