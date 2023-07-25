@@ -6,23 +6,12 @@ class Authorization
   {
     $header = getallheaders();
 
-    if (isset($header['Authorization'])) {
+    if (isset($header['Authorization']) || isset($header['authorization'])) {
 
-      $authorization = $header['Authorization'];
+      $token =  $header['authorization'] ?? $header['Authorization'];
 
-      if (strpos($authorization, 'Bearer') === 0) {
+      return str_replace('Bearer ', '', $token);
 
-        $token = substr($authorization, 7);
-
-        if (!empty($token)) {
-          return $token;
-
-        } else {
-          return false;
-        }
-      } else {
-        return false;
-      }
     } else {
       return false;
     }
