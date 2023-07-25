@@ -171,7 +171,7 @@ class BookService extends Requests
               http_response_code(406);
               $result = [
                 'error_01' => "Verify title or year, try different values",
-                'error_02' => "Sorry, something went wrog, verify the IDs"
+                'error_02' => "Sorry, something went wrog, verify the ID"
               ];
             }
 
