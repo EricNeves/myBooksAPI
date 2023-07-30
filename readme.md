@@ -50,7 +50,7 @@ Segue-se alguns passos para a execução da aplicação:
 
 - Iniciar o servidor <b>Apache</b> e o <b>Mysql</b>.
 
-- Configure o arquivo config.php com suas credenciais de banco de dados e edite o BASE_URL conforme a localização do projeto.
+- Configure o arquivo <b>config.php</b> com suas credenciais de banco de dados e edite o <b>BASE_URL</b> conforme a localização do projeto.
 
 - Copie a pasta do projeto para dentro do servidor <b>Apache</b>.
 
