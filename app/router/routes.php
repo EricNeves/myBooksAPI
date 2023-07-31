@@ -1,7 +1,7 @@
 <?php
 
 $routes = [
-  '/' => 'HomeService@index',
+  '/'                  => 'HomeService@index',
 
   '/users'             => 'UserService@list',
   '/users/create'      => 'UserService@index',
