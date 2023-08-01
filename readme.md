@@ -62,12 +62,9 @@ Segue-se alguns passos para a execução da aplicação:
 
 Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch API</b> do <b>Javascript</b>.
 
-```sh
-# API home - @Route[GET] "/" 
-```
-
 ```js
-// @Route[GET] "/" => API home 
+
+#[Route("/", methods: ["GET"])]
 
 fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
@@ -80,12 +77,9 @@ fetch('http://127.0.0.1/myBooksAPI/')
 
 ```
 
-```sh
-# Create a new user - @Route[POST] "/users/create"
-```
-
 ```js
-// @Route[POST] "/users/create" => Create a new user
+
+#[Route("/users/create", methods: ["POST"])]
 
 const config = {
   method: 'POST',
@@ -103,12 +97,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/create', config)
 
 ```
 
-```sh
-# Login user - @Route[POST] "/users/login"
-```
-
 ```js
-// @Route[POST] "/users/login" => Login user
+
+#[Route("/users/login", methods: ["POST"])]
 
 const config = {
   method: 'POST',
@@ -126,12 +117,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/login')
 
 ```
 
-```sh
-# List user info - @Route[GET] "/users"
-```
-
 ```js
-// @Route[GET] "/users" => List user info
+
+#[Route("/users", methods: ["GET"])]
 
 const config = {
   method: 'GET',
@@ -154,12 +142,9 @@ fetch('http://127.0.0.1/myBooksAPI/users', config)
 
 ```
 
-```sh
-# Update user - @Route[PUT] "/users/update"
-```
-
 ```js
-// @Route[PUT] "/users/update" => Update user
+
+#[Route("/users/update", methods: ["PUT"])]
 
 const config = {
   method: 'PUT',
@@ -177,12 +162,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/update', config)
 
 ```
 
-```sh
-# List user books - @Route[GET] "/books"
-```
-
 ```js
-// @Route[GET] "/books" => List books
+
+#[Route("/books", methods: ["GET"])]
 
 const config = {
   method: 'GET',
@@ -202,12 +184,9 @@ fetch('http://127.0.0.1/myBooksAPI/books')
 
 ```
 
-```sh
-# Create a book - @Route[POST] "/books/create"
-```
-
 ```js
-// @Route[POST] "/books/create" => Create a book
+
+#[Route("/books/create", methods: ["POST"])]
 
 const config = {
   method: 'POST',
@@ -225,12 +204,9 @@ fetch('http://127.0.0.1/myBooksAPI/books/create')
 
 ```
 
-```sh
-# List book by ID - @Route[GET] "/books/list/{id}"
-```
-
 ```js
-// @Route[GET] "/books/list/{book_id}" => List book by ID
+
+#[Route("/books/list/{book_id}", methods: ["GET"])]
 
 const config = {
   method: 'GET',
@@ -254,12 +230,9 @@ fetch('http://127.0.0.1/myBooksAPI/books/list/{book_id}')
 
 ```
 
-```sh
-# Update book - @Route[PUT] "/books/update/{book_id}"
-```
-
 ```js
-// @Route[PUT] "/books/update/{book_id}" => Update book 
+
+#[Route("/books/update/{book_id}", methods: ["PUT"])]
 
 const config = {
   method: 'PUT',
@@ -282,7 +255,8 @@ fetch('http://127.0.0.1/myBooksAPI/update/{book_id}')
 ```
 
 ```js
-//  @Route[DELETE] "/books/remove/{book_id}" => Remove book
+
+#[Route("/books/remove/{book_id}", methods: ["DELETE"])]
 
 const config = {
   method: 'DELETE',
