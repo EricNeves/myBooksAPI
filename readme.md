@@ -64,7 +64,9 @@ Nos exemplos de consumo da <b>API</b>, será utilizado a funcionalidade <b>Fetch
 
 ```js
 
-#[Route("/", methods: ["GET"])]
+/**
+ * @Route("/", methods: {"GET"})
+*/
 
 fetch('http://127.0.0.1/myBooksAPI/')
   .then(res => res.json())
@@ -79,7 +81,9 @@ fetch('http://127.0.0.1/myBooksAPI/')
 
 ```js
 
-#[Route("/users/create", methods: ["POST"])]
+/**
+ * @Route("/users/create", methods: {"POST"})
+*/
 
 const config = {
   method: 'POST',
@@ -99,7 +103,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/create', config)
 
 ```js
 
-#[Route("/users/login", methods: ["POST"])]
+/**
+ * @Route("/users/login", methods: {"POST"})
+*/
 
 const config = {
   method: 'POST',
@@ -119,7 +125,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/login')
 
 ```js
 
-#[Route("/users", methods: ["GET"])]
+/**
+ * @Route("/users", methods: {"GET"})
+*/
 
 const config = {
   method: 'GET',
@@ -144,7 +152,9 @@ fetch('http://127.0.0.1/myBooksAPI/users', config)
 
 ```js
 
-#[Route("/users/update", methods: ["PUT"])]
+/**
+ * @Route("/users/update", methods: {"PUT"})
+*/
 
 const config = {
   method: 'PUT',
@@ -164,7 +174,9 @@ fetch('http://127.0.0.1/myBooksAPI/users/update', config)
 
 ```js
 
-#[Route("/books", methods: ["GET"])]
+/**
+ * @Route("/books", methods: {"GET"})
+*/
 
 const config = {
   method: 'GET',
@@ -186,7 +198,9 @@ fetch('http://127.0.0.1/myBooksAPI/books')
 
 ```js
 
-#[Route("/books/create", methods: ["POST"])]
+/**
+ * @Route("/books/create", methods: {"POST"})
+*/
 
 const config = {
   method: 'POST',
@@ -206,7 +220,9 @@ fetch('http://127.0.0.1/myBooksAPI/books/create')
 
 ```js
 
-#[Route("/books/list/{book_id}", methods: ["GET"])]
+/**
+ * @Route("/books/list/{book_id}", methods: {"GET"})
+*/
 
 const config = {
   method: 'GET',
@@ -232,7 +248,9 @@ fetch('http://127.0.0.1/myBooksAPI/books/list/{book_id}')
 
 ```js
 
-#[Route("/books/update/{book_id}", methods: ["PUT"])]
+/**
+ * @Route("/books/update/{book_id}", methods: {"PUT"})
+*/
 
 const config = {
   method: 'PUT',
@@ -250,13 +268,11 @@ fetch('http://127.0.0.1/myBooksAPI/update/{book_id}')
 
 ```
 
-```sh
-# Remove book - @Route[DELETE] "/books/remove/{book_id}"
-```
-
 ```js
 
-#[Route("/books/remove/{book_id}", methods: ["DELETE"])]
+/**
+ * @Route("/books/remove/{book_id}", methods: {"DELETE"})
+*/
 
 const config = {
   method: 'DELETE',
