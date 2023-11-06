@@ -9,6 +9,8 @@
   API RESTFul desenvolvida com <b>PHP</b>, <b>Mysql</b>, autenticação por <b>JWT</b>, <b>CRUD</b> de dados, rotas e entre outros.
 </h4>
 
+<p align="center">Data de criação: Jul 24, 2023</p>
+
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/ericneves/myBooksAPI?style=flat-square&logo=github&logoColor=yellow&color=yellow">
   <img src="https://img.shields.io/github/languages/top/ericneves/myBooksAPI?style=flat-square&logo=php&logoColor=blue&labelColor=white">
